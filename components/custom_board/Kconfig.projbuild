@@ -1,0 +1,15 @@
+menu "Additional Audio Board"
+
+choice CUSTOM_AUDIO_BOARD
+    prompt "My audio board"
+    default M5StickC_SPK_HAT
+    help
+        Select an audio board to use with the ESP-ADF
+
+config M5StickC_SPK_HAT
+    bool "M5StickC SPK HAT"
+
+endchoice
+
+endmenu
+
