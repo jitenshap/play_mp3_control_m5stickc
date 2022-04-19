@@ -123,6 +123,7 @@ void app_main(void)
     i2s_cfg.i2s_config.mode = (I2S_MODE_MASTER | I2S_MODE_TX | I2S_MODE_DAC_BUILT_IN);
     i2s_cfg.i2s_config.sample_rate = 48000;
     i2s_cfg.i2s_config.bits_per_sample = 16; /* the DAC module will only take the 8bits from MSB */
+    i2s_cfg.i2s_config.use_apll = true;
 #else
     i2s_stream_cfg_t i2s_cfg = I2S_STREAM_CFG_DEFAULT();
     i2s_cfg.type = AUDIO_STREAM_WRITER;
